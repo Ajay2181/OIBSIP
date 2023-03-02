@@ -1,11 +1,20 @@
-DB =
-JWTPRIVATEKEY =
-SALT=
-BASE_URL=
-HOST=
-EMAIL_PORT=
-SECURE=
-USER=
-PASS=
-KEY_ID=
-KEY_SECRET=
+{
+  "development": {
+    "username": "postgres",
+    "password": "test123",
+    "database": "ajay",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "test123",
+    "database": "ajay",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "use_env_variable": "DATABASE_URL",
+    "dialect": "postgres"
+  }
+}
